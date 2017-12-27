@@ -37,31 +37,31 @@ while True:
 
        draw_board_section()
 
-	   # Check row 
-	   def check_row_O():
-		   if board[0] == "o" and board[1] == "o" and board[2] == "o" or \
+	# Check row 
+	def check_row_O():
+           if board[0] == "o" and board[1] == "o" and board[2] == "o" or \
               board[3] == "o" and board[4] == "o" and board[5] == "o" or \
               board[6] == "o" and board[7] == "o" and board[8] == "o":
                print(RESULT_2)
 		
-		check_row_O()	
+	check_row_O()	
 		
-		# Check column
-		def check_column_O():
-            if board[0] == "o" and board[3] == "o" and board[6] == "o" or \
-               board[1] == "o" and board[4] == "o" and board[7] == "o" or \
-               board[2] == "o" and board[5] == "o" and board[8] == "o":
-                print(RESULT_2)
+	# Check column
+	def check_column_O():
+           if board[0] == "o" and board[3] == "o" and board[6] == "o" or \
+              board[1] == "o" and board[4] == "o" and board[7] == "o" or \
+              board[2] == "o" and board[5] == "o" and board[8] == "o":
+               print(RESULT_2)
         
-		check_column_O()
+	check_column_O()
 
-		# Check diagonal
-		def check_diagonal_O():	
-            if board[0] == "o" and board[4] == "o" and board[8] == "o" or \
-               board[2] == "o" and board[4] == "o" and board[6] == "o":
+	# Check diagonal
+	def check_diagonal_O():	
+           if board[0] == "o" and board[4] == "o" and board[8] == "o" or \
+              board[2] == "o" and board[4] == "o" and board[6] == "o":
                print(RESULT_2)
 		
-		check_diagonal_O()
+	check_diagonal_O()
 
        # Check row
        def check_row_X():
